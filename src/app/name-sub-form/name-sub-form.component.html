@@ -1,0 +1,14 @@
+<div class="w-100">
+  <div>First name</div>
+  <input matInput [formControl]="form.controls.firstName" required />
+  <div *ngIf="form.controls.firstName.hasError('required')">
+    Required
+  </div>
+</div>
+<div class="w-100">
+  <div>Last name</div>
+  <input matInput [formControl]="form.controls.lastName" required />
+  <div *ngIf="form.controls.lastName.hasError('required')">
+    Required
+  </div>
+</div>

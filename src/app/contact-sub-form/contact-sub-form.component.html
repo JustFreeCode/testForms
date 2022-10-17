@@ -1,0 +1,10 @@
+<div class="w-100">
+  <div>E-mail</div>
+  <input matInput type="email" [formControl]="form.controls.email" required />
+  <div *ngIf="form.controls.email.hasError('required')">
+    Required
+  </div>
+  <div *ngIf="form.controls.email.hasError('email')">
+    E-mail address not valid
+  </div>
+</div>
